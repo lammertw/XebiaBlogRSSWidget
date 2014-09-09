@@ -19,13 +19,34 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
         formatter.timeStyle = .ShortStyle
         return formatter
     }()
+
+    let expandButton = UIButton()
+
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+
+    var expanded : Bool {
+        get {
+            return userDefaults.boolForKey("expanded")
+        }
+        set (newExpanded) {
+            userDefaults.setBool(newExpanded, forKey: "expanded")
+            userDefaults.synchronize()
+        }
+    }
+
+    let defaultNumRows = 3
+    let maxNumberOfRows = 6
         
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        updateExpandButtonTitle()
+        expandButton.addTarget(self, action: "toggleExpand", forControlEvents: .TouchUpInside)
+        tableView.sectionFooterHeight = 44
     }
     
     func updatePreferredContentSize() {
-        preferredContentSize = CGSizeMake(CGFloat(0), CGFloat(tableView(tableView, numberOfRowsInSection: 0)) * CGFloat(tableView.rowHeight))
+        preferredContentSize = CGSizeMake(CGFloat(0), CGFloat(tableView(tableView, numberOfRowsInSection: 0)) * CGFloat(tableView.rowHeight) + tableView.sectionFooterHeight)
     }
 
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
@@ -61,7 +82,7 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let items = items {
-            return items.count
+            return min(items.count, expanded ? maxNumberOfRows : defaultNumRows)
         }
         return 0
     }
@@ -76,5 +97,22 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
         }
 
         return cell
+    }
+
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return expandButton
+    }
+
+    // MARK: expand
+
+    func updateExpandButtonTitle() {
+        expandButton.setTitle(expanded ? "Show less" : "Show more", forState: .Normal)
+    }
+
+    func toggleExpand() {
+        expanded = !expanded
+        updateExpandButtonTitle()
+        updatePreferredContentSize()
+        tableView.reloadData()
     }
 }
