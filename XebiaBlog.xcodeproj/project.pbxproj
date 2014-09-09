@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21CF5A9BC0A74C99B3C662CD /* libPods-XebiaBlogRSSWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA575CBA856483DBDCCCB87 /* libPods-XebiaBlogRSSWidget.a */; };
 		2F3F41E719BEE8DA00487106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F41E619BEE8DA00487106 /* AppDelegate.swift */; };
 		2F3F41E919BEE8DB00487106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F41E819BEE8DB00487106 /* ViewController.swift */; };
 		2F3F41EC19BEE8DB00487106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F41EA19BEE8DB00487106 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		2F3F41FA19BEE8DB00487106 /* XebiaBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F41F919BEE8DB00487106 /* XebiaBlogTests.swift */; };
 		2F3F420619BEECAB00487106 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F420519BEECAB00487106 /* ArrowView.swift */; };
 		2F3F420819BEED1400487106 /* XebiaBlogStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */; };
+		2F3F420F19BEEFE700487106 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3F420E19BEEFE700487106 /* NotificationCenter.framework */; };
+		2F3F421419BEEFE700487106 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F421319BEEFE700487106 /* TodayViewController.swift */; };
+		2F3F421619BEEFE800487106 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F421519BEEFE800487106 /* MainInterface.storyboard */; };
+		2F3F421919BEEFE800487106 /* XebiaBlogRSSWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,35 @@
 			remoteGlobalIDString = 2F3F41E019BEE8DA00487106;
 			remoteInfo = XebiaBlog;
 		};
+		2F3F421719BEEFE800487106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F3F41D919BEE8DA00487106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F3F420C19BEEFE700487106;
+			remoteInfo = XebiaBlogRSSWidget;
+		};
+		2F3F421A19BEEFE800487106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F3F41D919BEE8DA00487106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F3F420C19BEEFE700487106;
+			remoteInfo = XebiaBlogRSSWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F3F421F19BEEFE800487106 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F3F421919BEEFE800487106 /* XebiaBlogRSSWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F3F41E119BEE8DA00487106 /* XebiaBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XebiaBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +71,16 @@
 		2F3F41F919BEE8DB00487106 /* XebiaBlogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XebiaBlogTests.swift; sourceTree = "<group>"; };
 		2F3F420519BEECAB00487106 /* ArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 		2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XebiaBlogStyleKit.swift; sourceTree = SOURCE_ROOT; };
+		2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XebiaBlogRSSWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3F420E19BEEFE700487106 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2F3F421219BEEFE700487106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F3F421319BEEFE700487106 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2F3F421519BEEFE800487106 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		2F3F422019BEF13A00487106 /* XebiaBlogRSSWidget-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XebiaBlogRSSWidget-Bridging-Header.h"; sourceTree = "<group>"; };
+		565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlog.xcconfig"; path = "Pods/Pods-XebiaBlog.xcconfig"; sourceTree = "<group>"; };
+		6129B286344D48E183F2DF29 /* libPods-XebiaBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XebiaBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlogRSSWidget.xcconfig"; path = "Pods/Pods-XebiaBlogRSSWidget.xcconfig"; sourceTree = "<group>"; };
+		CDA575CBA856483DBDCCCB87 /* libPods-XebiaBlogRSSWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XebiaBlogRSSWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +98,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F3F420A19BEEFE700487106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3F420F19BEEFE700487106 /* NotificationCenter.framework in Frameworks */,
+				21CF5A9BC0A74C99B3C662CD /* libPods-XebiaBlogRSSWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,7 +115,11 @@
 			children = (
 				2F3F41E319BEE8DA00487106 /* XebiaBlog */,
 				2F3F41F619BEE8DB00487106 /* XebiaBlogTests */,
+				2F3F421019BEEFE700487106 /* XebiaBlogRSSWidget */,
 				2F3F41E219BEE8DA00487106 /* Products */,
+				565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */,
+				647AAE21B59A4C7DB91049D6 /* Frameworks */,
+				8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +128,7 @@
 			children = (
 				2F3F41E119BEE8DA00487106 /* XebiaBlog.app */,
 				2F3F41F319BEE8DB00487106 /* XebiaBlogTests.xctest */,
+				2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +172,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2F3F421019BEEFE700487106 /* XebiaBlogRSSWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2F3F421319BEEFE700487106 /* TodayViewController.swift */,
+				2F3F421519BEEFE800487106 /* MainInterface.storyboard */,
+				2F3F422019BEF13A00487106 /* XebiaBlogRSSWidget-Bridging-Header.h */,
+				2F3F421119BEEFE700487106 /* Supporting Files */,
+			);
+			path = XebiaBlogRSSWidget;
+			sourceTree = "<group>";
+		};
+		2F3F421119BEEFE700487106 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F3F421219BEEFE700487106 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		647AAE21B59A4C7DB91049D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6129B286344D48E183F2DF29 /* libPods-XebiaBlog.a */,
+				2F3F420E19BEEFE700487106 /* NotificationCenter.framework */,
+				CDA575CBA856483DBDCCCB87 /* libPods-XebiaBlogRSSWidget.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,13 +208,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F3F41FD19BEE8DB00487106 /* Build configuration list for PBXNativeTarget "XebiaBlog" */;
 			buildPhases = (
+				78A390E21A55483080F04844 /* Check Pods Manifest.lock */,
 				2F3F41DD19BEE8DA00487106 /* Sources */,
 				2F3F41DE19BEE8DA00487106 /* Frameworks */,
 				2F3F41DF19BEE8DA00487106 /* Resources */,
+				F8A7F154D28A4422967A58E2 /* Copy Pods Resources */,
+				2F3F421F19BEEFE800487106 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2F3F421819BEEFE800487106 /* PBXTargetDependency */,
+				2F3F421B19BEEFE800487106 /* PBXTargetDependency */,
 			);
 			name = XebiaBlog;
 			productName = XebiaBlog;
@@ -153,6 +244,25 @@
 			productReference = 2F3F41F319BEE8DB00487106 /* XebiaBlogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F3F421E19BEEFE800487106 /* Build configuration list for PBXNativeTarget "XebiaBlogRSSWidget" */;
+			buildPhases = (
+				2BF6E3E8FDA14E239935CEB1 /* Check Pods Manifest.lock */,
+				2F3F420919BEEFE700487106 /* Sources */,
+				2F3F420A19BEEFE700487106 /* Frameworks */,
+				2F3F420B19BEEFE700487106 /* Resources */,
+				15B70B736DA548FE888FC8E0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XebiaBlogRSSWidget;
+			productName = XebiaBlogRSSWidget;
+			productReference = 2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +278,9 @@
 					2F3F41F219BEE8DB00487106 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 2F3F41E019BEE8DA00487106;
+					};
+					2F3F420C19BEEFE700487106 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -186,6 +299,7 @@
 			targets = (
 				2F3F41E019BEE8DA00487106 /* XebiaBlog */,
 				2F3F41F219BEE8DB00487106 /* XebiaBlogTests */,
+				2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -207,7 +321,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F3F420B19BEEFE700487106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3F421619BEEFE800487106 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B70B736DA548FE888FC8E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-XebiaBlogRSSWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BF6E3E8FDA14E239935CEB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78A390E21A55483080F04844 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A7F154D28A4422967A58E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-XebiaBlog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F3F41DD19BEE8DA00487106 /* Sources */ = {
@@ -229,6 +414,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F3F420919BEEFE700487106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3F421419BEEFE700487106 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +429,16 @@
 			isa = PBXTargetDependency;
 			target = 2F3F41E019BEE8DA00487106 /* XebiaBlog */;
 			targetProxy = 2F3F41F419BEE8DB00487106 /* PBXContainerItemProxy */;
+		};
+		2F3F421819BEEFE800487106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */;
+			targetProxy = 2F3F421719BEEFE800487106 /* PBXContainerItemProxy */;
+		};
+		2F3F421B19BEEFE800487106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */;
+			targetProxy = 2F3F421A19BEEFE800487106 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -332,6 +535,7 @@
 		};
 		2F3F41FE19BEE8DB00487106 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -343,6 +547,7 @@
 		};
 		2F3F41FF19BEE8DB00487106 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +591,34 @@
 			};
 			name = Release;
 		};
+		2F3F421C19BEEFE800487106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XebiaBlogRSSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "XebiaBlogRSSWidget/XebiaBlogRSSWidget-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		2F3F421D19BEEFE800487106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = XebiaBlogRSSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "XebiaBlogRSSWidget/XebiaBlogRSSWidget-Bridging-Header.h";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +638,7 @@
 				2F3F41FF19BEE8DB00487106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F3F420019BEE8DB00487106 /* Build configuration list for PBXNativeTarget "XebiaBlogTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +647,16 @@
 				2F3F420219BEE8DB00487106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F3F421E19BEEFE800487106 /* Build configuration list for PBXNativeTarget "XebiaBlogRSSWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F3F421C19BEEFE800487106 /* Debug */,
+				2F3F421D19BEEFE800487106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
