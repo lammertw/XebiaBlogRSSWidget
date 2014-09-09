@@ -22,12 +22,15 @@ PODS:
     - AFNetworking/NSURLSession
   - BlockRSSParser (2.1):
     - AFNetworking (~> 2.0)
+  - TMCache (1.2.1)
 
 DEPENDENCIES:
   - BlockRSSParser (~> 2.1)
+  - TMCache (~> 1.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
   BlockRSSParser: 971b87a57521a3e4bc514af60dc8975d0ccc9b4c
+  TMCache: ed936c5b4684e4ea15113d46fba8829ed3baadad
 
 COCOAPODS: 0.33.1

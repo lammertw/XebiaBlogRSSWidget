@@ -7,4 +7,5 @@ end
 
 target "XebiaBlogRSSWidget" do
   pod 'BlockRSSParser', '~> 2.1'
+  pod 'TMCache', '~> 1.2'
 end

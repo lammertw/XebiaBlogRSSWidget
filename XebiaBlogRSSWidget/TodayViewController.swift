@@ -36,6 +36,15 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
 
     let defaultNumRows = 3
     let maxNumberOfRows = 6
+
+    var cachedItems : [RSSItem]? {
+        get {
+            return TMCache.sharedCache().objectForKey("feed") as? [RSSItem]
+        }
+        set (newItems) {
+            TMCache.sharedCache().setObject(newItems, forKey: "feed")
+        }
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +52,8 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
         updateExpandButtonTitle()
         expandButton.addTarget(self, action: "toggleExpand", forControlEvents: .TouchUpInside)
         tableView.sectionFooterHeight = 44
+
+        items = cachedItems
     }
     
     func updatePreferredContentSize() {
@@ -70,6 +81,8 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
                 self.tableView .reloadData()
                 self.updatePreferredContentSize()
                 completionHandler(.NewData)
+
+                self.cachedItems = self.items
             },
             failure: { error in
                 println(error)
