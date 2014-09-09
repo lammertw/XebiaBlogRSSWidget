@@ -1,0 +1,17 @@
+# Finder droppings, in any directory.
+.DS_Store
+
+# Ignore user-specific workspace settings.
+xcuserdata
+
+build
+*.swp
+
+.idea
+
+*.xccheckout
+
+Pods/Manifest.lock
+
+/Pods/
+

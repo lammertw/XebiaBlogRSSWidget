@@ -12,6 +12,8 @@
 		2F3F41EC19BEE8DB00487106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F41EA19BEE8DB00487106 /* Main.storyboard */; };
 		2F3F41EE19BEE8DB00487106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F41ED19BEE8DB00487106 /* Images.xcassets */; };
 		2F3F41FA19BEE8DB00487106 /* XebiaBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F41F919BEE8DB00487106 /* XebiaBlogTests.swift */; };
+		2F3F420619BEECAB00487106 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F420519BEECAB00487106 /* ArrowView.swift */; };
+		2F3F420819BEED1400487106 /* XebiaBlogStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		2F3F41F319BEE8DB00487106 /* XebiaBlogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XebiaBlogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3F41F819BEE8DB00487106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F3F41F919BEE8DB00487106 /* XebiaBlogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XebiaBlogTests.swift; sourceTree = "<group>"; };
+		2F3F420519BEECAB00487106 /* ArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XebiaBlogStyleKit.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				2F3F41EA19BEE8DB00487106 /* Main.storyboard */,
 				2F3F41ED19BEE8DB00487106 /* Images.xcassets */,
 				2F3F41E419BEE8DA00487106 /* Supporting Files */,
+				2F3F420519BEECAB00487106 /* ArrowView.swift */,
+				2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */,
 			);
 			path = XebiaBlog;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3F420819BEED1400487106 /* XebiaBlogStyleKit.swift in Sources */,
+				2F3F420619BEECAB00487106 /* ArrowView.swift in Sources */,
 				2F3F41E919BEE8DB00487106 /* ViewController.swift in Sources */,
 				2F3F41E719BEE8DA00487106 /* AppDelegate.swift in Sources */,
 			);
