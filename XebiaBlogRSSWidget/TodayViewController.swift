@@ -12,13 +12,26 @@ import NotificationCenter
 class TodayViewController: UITableViewController, NCWidgetProviding {
 
     var items : [RSSItem]?
+
+    let dateFormatter :NSDateFormatter = {
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = .ShortStyle
+        formatter.timeStyle = .ShortStyle
+        return formatter
+    }()
         
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func updatePreferredContentSize() {
+        preferredContentSize = CGSizeMake(CGFloat(0), CGFloat(tableView(tableView, numberOfRowsInSection: 0)) * CGFloat(tableView.rowHeight))
+    }
+
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animateAlongsideTransition({ context in
+            self.tableView.frame = CGRectMake(0, 0, size.width, size.height)
+        }, completion: nil)
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
@@ -33,7 +46,8 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
         RSSParser.parseRSSFeedForRequest(req,
             success: { feedItems in
                 self.items = feedItems as? [RSSItem]
-
+                self.tableView .reloadData()
+                self.updatePreferredContentSize()
                 completionHandler(.NewData)
             },
             failure: { error in
@@ -42,5 +56,25 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
                 
         })
     }
-    
+
+    // MARK: Table view data source
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let items = items {
+            return items.count
+        }
+        return 0
+    }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("RSSItem", forIndexPath: indexPath) as RSSItemTableViewCell
+
+        if let item = items?[indexPath.row] {
+            cell.titleLabel.text = item.title
+            cell.authorLabel.text = item.author
+            cell.dateLabel.text = dateFormatter.stringFromDate(item.pubDate)
+        }
+
+        return cell
+    }
 }

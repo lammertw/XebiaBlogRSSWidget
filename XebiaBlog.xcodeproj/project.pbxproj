@@ -19,6 +19,7 @@
 		2F3F421419BEEFE700487106 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F421319BEEFE700487106 /* TodayViewController.swift */; };
 		2F3F421619BEEFE800487106 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F421519BEEFE800487106 /* MainInterface.storyboard */; };
 		2F3F421919BEEFE800487106 /* XebiaBlogRSSWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F3F422219BF025100487106 /* RSSItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F422119BF025100487106 /* RSSItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		2F3F421319BEEFE700487106 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		2F3F421519BEEFE800487106 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		2F3F422019BEF13A00487106 /* XebiaBlogRSSWidget-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XebiaBlogRSSWidget-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F3F422119BF025100487106 /* RSSItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItemTableViewCell.swift; sourceTree = "<group>"; };
 		565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlog.xcconfig"; path = "Pods/Pods-XebiaBlog.xcconfig"; sourceTree = "<group>"; };
 		6129B286344D48E183F2DF29 /* libPods-XebiaBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XebiaBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlogRSSWidget.xcconfig"; path = "Pods/Pods-XebiaBlogRSSWidget.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				2F3F421519BEEFE800487106 /* MainInterface.storyboard */,
 				2F3F422019BEF13A00487106 /* XebiaBlogRSSWidget-Bridging-Header.h */,
 				2F3F421119BEEFE700487106 /* Supporting Files */,
+				2F3F422119BF025100487106 /* RSSItemTableViewCell.swift */,
 			);
 			path = XebiaBlogRSSWidget;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3F421419BEEFE700487106 /* TodayViewController.swift in Sources */,
+				2F3F422219BF025100487106 /* RSSItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

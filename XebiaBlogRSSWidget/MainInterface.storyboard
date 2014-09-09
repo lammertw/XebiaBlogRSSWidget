@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Taf-3c-PRF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -13,11 +14,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="ChK-5S-I2G">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RSSItem" rowHeight="60" id="ChK-5S-I2G" customClass="RSSItemTableViewCell" customModule="XebiaBlogRSSWidget" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ChK-5S-I2G" id="oO6-ps-6Cv">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7M-og-L4C">
+                                            <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CV-fH-cJo">
+                                            <rect key="frame" x="8" y="34" width="46" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oR-eE-IOp">
+                                            <rect key="frame" x="62" y="34" width="250" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="V7M-og-L4C" firstAttribute="trailing" secondItem="oO6-ps-6Cv" secondAttribute="trailingMargin" id="1j7-5n-TMY"/>
+                                        <constraint firstItem="V7M-og-L4C" firstAttribute="top" secondItem="oO6-ps-6Cv" secondAttribute="topMargin" id="5lf-mu-00x"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7oR-eE-IOp" secondAttribute="bottom" constant="-0.5" id="gYh-Si-DmD"/>
+                                        <constraint firstItem="7oR-eE-IOp" firstAttribute="trailing" secondItem="oO6-ps-6Cv" secondAttribute="trailingMargin" id="mwq-Hi-DOf"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="9CV-fH-cJo" secondAttribute="bottom" constant="-0.5" id="ptL-SM-uKw"/>
+                                        <constraint firstItem="7oR-eE-IOp" firstAttribute="leading" secondItem="9CV-fH-cJo" secondAttribute="trailing" constant="8" id="rr1-QH-z1u"/>
+                                        <constraint firstItem="9CV-fH-cJo" firstAttribute="leading" secondItem="oO6-ps-6Cv" secondAttribute="leadingMargin" id="sUA-9D-OXd"/>
+                                        <constraint firstItem="V7M-og-L4C" firstAttribute="leading" secondItem="oO6-ps-6Cv" secondAttribute="leadingMargin" id="tny-3u-1HJ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorLabel" destination="9CV-fH-cJo" id="hm0-uy-CZ8"/>
+                                    <outlet property="dateLabel" destination="7oR-eE-IOp" id="c01-l4-W77"/>
+                                    <outlet property="titleLabel" destination="V7M-og-L4C" id="wZf-YK-UJu"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
