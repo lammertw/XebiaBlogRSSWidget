@@ -124,6 +124,14 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
         return expandButton
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let item = items?[indexPath.row] {
+            if let context = extensionContext {
+                context.openURL(item.link, completionHandler: nil)
+            }
+        }
+    }
+
     // MARK: expand
 
     func updateExpandButtonTitle() {
