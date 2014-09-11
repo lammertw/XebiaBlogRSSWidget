@@ -54,6 +54,7 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
         tableView.sectionFooterHeight = 44
 
         items = cachedItems
+        updatePreferredContentSize()
     }
     
     func updatePreferredContentSize() {
@@ -77,18 +78,25 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
 
         RSSParser.parseRSSFeedForRequest(req,
             success: { feedItems in
-                self.items = feedItems as? [RSSItem]
-                self.tableView .reloadData()
-                self.updatePreferredContentSize()
-                completionHandler(.NewData)
-
-                self.cachedItems = self.items
+                if self.hasNewData(feedItems as [RSSItem]) {
+                    self.items = feedItems as? [RSSItem]
+                    self.tableView .reloadData()
+                    self.updatePreferredContentSize()
+                    self.cachedItems = self.items
+                    completionHandler(.NewData)
+                } else {
+                    completionHandler(.NoData)
+                }
             },
             failure: { error in
                 println(error)
                 completionHandler(.Failed)
                 
         })
+    }
+
+    func hasNewData(feedItems: [RSSItem]) -> Bool {
+        return items == nil || items! != feedItems
     }
 
     // MARK: Table view data source
