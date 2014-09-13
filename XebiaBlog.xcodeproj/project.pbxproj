@@ -79,7 +79,6 @@
 		2F3F421519BEEFE800487106 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		2F3F422019BEF13A00487106 /* XebiaBlogRSSWidget-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XebiaBlogRSSWidget-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F3F422119BF025100487106 /* RSSItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItemTableViewCell.swift; sourceTree = "<group>"; };
-		565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlog.xcconfig"; path = "Pods/Pods-XebiaBlog.xcconfig"; sourceTree = "<group>"; };
 		6129B286344D48E183F2DF29 /* libPods-XebiaBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XebiaBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlogRSSWidget.xcconfig"; path = "Pods/Pods-XebiaBlogRSSWidget.xcconfig"; sourceTree = "<group>"; };
 		CDA575CBA856483DBDCCCB87 /* libPods-XebiaBlogRSSWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XebiaBlogRSSWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +118,6 @@
 				2F3F41F619BEE8DB00487106 /* XebiaBlogTests */,
 				2F3F421019BEEFE700487106 /* XebiaBlogRSSWidget */,
 				2F3F41E219BEE8DA00487106 /* Products */,
-				565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */,
 				647AAE21B59A4C7DB91049D6 /* Frameworks */,
 				8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */,
 			);
@@ -539,7 +537,6 @@
 		};
 		2F3F41FE19BEE8DB00487106 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -551,7 +548,6 @@
 		};
 		2F3F41FF19BEE8DB00487106 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
