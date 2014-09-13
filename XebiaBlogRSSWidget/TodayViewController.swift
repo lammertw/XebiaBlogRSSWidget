@@ -16,7 +16,6 @@ class TodayViewController: UITableViewController, NCWidgetProviding {
     let dateFormatter :NSDateFormatter = {
         let formatter = NSDateFormatter()
         formatter.dateStyle = .ShortStyle
-        formatter.timeStyle = .ShortStyle
         return formatter
     }()
 
