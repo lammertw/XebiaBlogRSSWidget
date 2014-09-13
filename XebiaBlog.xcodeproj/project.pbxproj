@@ -1,668 +1,1356 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		21CF5A9BC0A74C99B3C662CD /* libPods-XebiaBlogRSSWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA575CBA856483DBDCCCB87 /* libPods-XebiaBlogRSSWidget.a */; };
-		2F3F41E719BEE8DA00487106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F41E619BEE8DA00487106 /* AppDelegate.swift */; };
-		2F3F41E919BEE8DB00487106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F41E819BEE8DB00487106 /* ViewController.swift */; };
-		2F3F41EC19BEE8DB00487106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F41EA19BEE8DB00487106 /* Main.storyboard */; };
-		2F3F41EE19BEE8DB00487106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F41ED19BEE8DB00487106 /* Images.xcassets */; };
-		2F3F41FA19BEE8DB00487106 /* XebiaBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F41F919BEE8DB00487106 /* XebiaBlogTests.swift */; };
-		2F3F420619BEECAB00487106 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F420519BEECAB00487106 /* ArrowView.swift */; };
-		2F3F420819BEED1400487106 /* XebiaBlogStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */; };
-		2F3F420F19BEEFE700487106 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3F420E19BEEFE700487106 /* NotificationCenter.framework */; };
-		2F3F421419BEEFE700487106 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F421319BEEFE700487106 /* TodayViewController.swift */; };
-		2F3F421619BEEFE800487106 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F421519BEEFE800487106 /* MainInterface.storyboard */; };
-		2F3F421919BEEFE800487106 /* XebiaBlogRSSWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2F3F422219BF025100487106 /* RSSItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F422119BF025100487106 /* RSSItemTableViewCell.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2F3F41F419BEE8DB00487106 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F3F41D919BEE8DA00487106 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F3F41E019BEE8DA00487106;
-			remoteInfo = XebiaBlog;
-		};
-		2F3F421719BEEFE800487106 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F3F41D919BEE8DA00487106 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F3F420C19BEEFE700487106;
-			remoteInfo = XebiaBlogRSSWidget;
-		};
-		2F3F421A19BEEFE800487106 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F3F41D919BEE8DA00487106 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F3F420C19BEEFE700487106;
-			remoteInfo = XebiaBlogRSSWidget;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2F3F421F19BEEFE800487106 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				2F3F421919BEEFE800487106 /* XebiaBlogRSSWidget.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		2F3F41E119BEE8DA00487106 /* XebiaBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XebiaBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F3F41E519BEE8DA00487106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F3F41E619BEE8DA00487106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F3F41E819BEE8DB00487106 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F3F41EB19BEE8DB00487106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2F3F41ED19BEE8DB00487106 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2F3F41F319BEE8DB00487106 /* XebiaBlogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XebiaBlogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F3F41F819BEE8DB00487106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F3F41F919BEE8DB00487106 /* XebiaBlogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XebiaBlogTests.swift; sourceTree = "<group>"; };
-		2F3F420519BEECAB00487106 /* ArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
-		2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XebiaBlogStyleKit.swift; sourceTree = SOURCE_ROOT; };
-		2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XebiaBlogRSSWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F3F420E19BEEFE700487106 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		2F3F421219BEEFE700487106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F3F421319BEEFE700487106 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		2F3F421519BEEFE800487106 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
-		2F3F422019BEF13A00487106 /* XebiaBlogRSSWidget-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XebiaBlogRSSWidget-Bridging-Header.h"; sourceTree = "<group>"; };
-		2F3F422119BF025100487106 /* RSSItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItemTableViewCell.swift; sourceTree = "<group>"; };
-		565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlog.xcconfig"; path = "Pods/Pods-XebiaBlog.xcconfig"; sourceTree = "<group>"; };
-		6129B286344D48E183F2DF29 /* libPods-XebiaBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XebiaBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XebiaBlogRSSWidget.xcconfig"; path = "Pods/Pods-XebiaBlogRSSWidget.xcconfig"; sourceTree = "<group>"; };
-		CDA575CBA856483DBDCCCB87 /* libPods-XebiaBlogRSSWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XebiaBlogRSSWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2F3F41DE19BEE8DA00487106 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F3F41F019BEE8DB00487106 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F3F420A19BEEFE700487106 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F3F420F19BEEFE700487106 /* NotificationCenter.framework in Frameworks */,
-				21CF5A9BC0A74C99B3C662CD /* libPods-XebiaBlogRSSWidget.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		2F3F41D819BEE8DA00487106 = {
-			isa = PBXGroup;
-			children = (
-				2F3F41E319BEE8DA00487106 /* XebiaBlog */,
-				2F3F41F619BEE8DB00487106 /* XebiaBlogTests */,
-				2F3F421019BEEFE700487106 /* XebiaBlogRSSWidget */,
-				2F3F41E219BEE8DA00487106 /* Products */,
-				565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */,
-				647AAE21B59A4C7DB91049D6 /* Frameworks */,
-				8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		2F3F41E219BEE8DA00487106 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F41E119BEE8DA00487106 /* XebiaBlog.app */,
-				2F3F41F319BEE8DB00487106 /* XebiaBlogTests.xctest */,
-				2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2F3F41E319BEE8DA00487106 /* XebiaBlog */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F41E619BEE8DA00487106 /* AppDelegate.swift */,
-				2F3F41E819BEE8DB00487106 /* ViewController.swift */,
-				2F3F41EA19BEE8DB00487106 /* Main.storyboard */,
-				2F3F41ED19BEE8DB00487106 /* Images.xcassets */,
-				2F3F41E419BEE8DA00487106 /* Supporting Files */,
-				2F3F420519BEECAB00487106 /* ArrowView.swift */,
-				2F3F420719BEED1400487106 /* XebiaBlogStyleKit.swift */,
-			);
-			path = XebiaBlog;
-			sourceTree = "<group>";
-		};
-		2F3F41E419BEE8DA00487106 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F41E519BEE8DA00487106 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2F3F41F619BEE8DB00487106 /* XebiaBlogTests */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F41F919BEE8DB00487106 /* XebiaBlogTests.swift */,
-				2F3F41F719BEE8DB00487106 /* Supporting Files */,
-			);
-			path = XebiaBlogTests;
-			sourceTree = "<group>";
-		};
-		2F3F41F719BEE8DB00487106 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F41F819BEE8DB00487106 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2F3F421019BEEFE700487106 /* XebiaBlogRSSWidget */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F421319BEEFE700487106 /* TodayViewController.swift */,
-				2F3F421519BEEFE800487106 /* MainInterface.storyboard */,
-				2F3F422019BEF13A00487106 /* XebiaBlogRSSWidget-Bridging-Header.h */,
-				2F3F421119BEEFE700487106 /* Supporting Files */,
-				2F3F422119BF025100487106 /* RSSItemTableViewCell.swift */,
-			);
-			path = XebiaBlogRSSWidget;
-			sourceTree = "<group>";
-		};
-		2F3F421119BEEFE700487106 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F421219BEEFE700487106 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		647AAE21B59A4C7DB91049D6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6129B286344D48E183F2DF29 /* libPods-XebiaBlog.a */,
-				2F3F420E19BEEFE700487106 /* NotificationCenter.framework */,
-				CDA575CBA856483DBDCCCB87 /* libPods-XebiaBlogRSSWidget.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		2F3F41E019BEE8DA00487106 /* XebiaBlog */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F3F41FD19BEE8DB00487106 /* Build configuration list for PBXNativeTarget "XebiaBlog" */;
-			buildPhases = (
-				78A390E21A55483080F04844 /* Check Pods Manifest.lock */,
-				2F3F41DD19BEE8DA00487106 /* Sources */,
-				2F3F41DE19BEE8DA00487106 /* Frameworks */,
-				2F3F41DF19BEE8DA00487106 /* Resources */,
-				F8A7F154D28A4422967A58E2 /* Copy Pods Resources */,
-				2F3F421F19BEEFE800487106 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F3F421819BEEFE800487106 /* PBXTargetDependency */,
-				2F3F421B19BEEFE800487106 /* PBXTargetDependency */,
-			);
-			name = XebiaBlog;
-			productName = XebiaBlog;
-			productReference = 2F3F41E119BEE8DA00487106 /* XebiaBlog.app */;
-			productType = "com.apple.product-type.application";
-		};
-		2F3F41F219BEE8DB00487106 /* XebiaBlogTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F3F420019BEE8DB00487106 /* Build configuration list for PBXNativeTarget "XebiaBlogTests" */;
-			buildPhases = (
-				2F3F41EF19BEE8DB00487106 /* Sources */,
-				2F3F41F019BEE8DB00487106 /* Frameworks */,
-				2F3F41F119BEE8DB00487106 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F3F41F519BEE8DB00487106 /* PBXTargetDependency */,
-			);
-			name = XebiaBlogTests;
-			productName = XebiaBlogTests;
-			productReference = 2F3F41F319BEE8DB00487106 /* XebiaBlogTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F3F421E19BEEFE800487106 /* Build configuration list for PBXNativeTarget "XebiaBlogRSSWidget" */;
-			buildPhases = (
-				2BF6E3E8FDA14E239935CEB1 /* Check Pods Manifest.lock */,
-				2F3F420919BEEFE700487106 /* Sources */,
-				2F3F420A19BEEFE700487106 /* Frameworks */,
-				2F3F420B19BEEFE700487106 /* Resources */,
-				15B70B736DA548FE888FC8E0 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = XebiaBlogRSSWidget;
-			productName = XebiaBlogRSSWidget;
-			productReference = 2F3F420D19BEEFE700487106 /* XebiaBlogRSSWidget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		2F3F41D919BEE8DA00487106 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = "Lammert Westerhoff";
-				TargetAttributes = {
-					2F3F41E019BEE8DA00487106 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					2F3F41F219BEE8DB00487106 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 2F3F41E019BEE8DA00487106;
-					};
-					2F3F420C19BEEFE700487106 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-				};
-			};
-			buildConfigurationList = 2F3F41DC19BEE8DA00487106 /* Build configuration list for PBXProject "XebiaBlog" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 2F3F41D819BEE8DA00487106;
-			productRefGroup = 2F3F41E219BEE8DA00487106 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				2F3F41E019BEE8DA00487106 /* XebiaBlog */,
-				2F3F41F219BEE8DB00487106 /* XebiaBlogTests */,
-				2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		2F3F41DF19BEE8DA00487106 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F3F41EC19BEE8DB00487106 /* Main.storyboard in Resources */,
-				2F3F41EE19BEE8DB00487106 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F3F41F119BEE8DB00487106 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F3F420B19BEEFE700487106 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F3F421619BEEFE800487106 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		15B70B736DA548FE888FC8E0 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-XebiaBlogRSSWidget-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2BF6E3E8FDA14E239935CEB1 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		78A390E21A55483080F04844 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F8A7F154D28A4422967A58E2 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-XebiaBlog-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2F3F41DD19BEE8DA00487106 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F3F420819BEED1400487106 /* XebiaBlogStyleKit.swift in Sources */,
-				2F3F420619BEECAB00487106 /* ArrowView.swift in Sources */,
-				2F3F41E919BEE8DB00487106 /* ViewController.swift in Sources */,
-				2F3F41E719BEE8DA00487106 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F3F41EF19BEE8DB00487106 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F3F41FA19BEE8DB00487106 /* XebiaBlogTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F3F420919BEEFE700487106 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F3F421419BEEFE700487106 /* TodayViewController.swift in Sources */,
-				2F3F422219BF025100487106 /* RSSItemTableViewCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2F3F41F519BEE8DB00487106 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F3F41E019BEE8DA00487106 /* XebiaBlog */;
-			targetProxy = 2F3F41F419BEE8DB00487106 /* PBXContainerItemProxy */;
-		};
-		2F3F421819BEEFE800487106 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */;
-			targetProxy = 2F3F421719BEEFE800487106 /* PBXContainerItemProxy */;
-		};
-		2F3F421B19BEEFE800487106 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F3F420C19BEEFE700487106 /* XebiaBlogRSSWidget */;
-			targetProxy = 2F3F421A19BEEFE800487106 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2F3F41EA19BEE8DB00487106 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F3F41EB19BEE8DB00487106 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		2F3F41FB19BEE8DB00487106 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2F3F41FC19BEE8DB00487106 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2F3F41FE19BEE8DB00487106 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = XebiaBlog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2F3F41FF19BEE8DB00487106 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 565E2B43DCA34648A82F0616 /* Pods-XebiaBlog.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = XebiaBlog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		2F3F420119BEE8DB00487106 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = XebiaBlogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XebiaBlog.app/XebiaBlog";
-			};
-			name = Debug;
-		};
-		2F3F420219BEE8DB00487106 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = XebiaBlogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XebiaBlog.app/XebiaBlog";
-			};
-			name = Release;
-		};
-		2F3F421C19BEEFE800487106 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */;
-			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = XebiaBlogRSSWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XebiaBlogRSSWidget/XebiaBlogRSSWidget-Bridging-Header.h";
-			};
-			name = Debug;
-		};
-		2F3F421D19BEEFE800487106 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8955E178FC0D4CA4A14B3BBA /* Pods-XebiaBlogRSSWidget.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = XebiaBlogRSSWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XebiaBlogRSSWidget/XebiaBlogRSSWidget-Bridging-Header.h";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2F3F41DC19BEE8DA00487106 /* Build configuration list for PBXProject "XebiaBlog" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F3F41FB19BEE8DB00487106 /* Debug */,
-				2F3F41FC19BEE8DB00487106 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F3F41FD19BEE8DB00487106 /* Build configuration list for PBXNativeTarget "XebiaBlog" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F3F41FE19BEE8DB00487106 /* Debug */,
-				2F3F41FF19BEE8DB00487106 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F3F420019BEE8DB00487106 /* Build configuration list for PBXNativeTarget "XebiaBlogTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F3F420119BEE8DB00487106 /* Debug */,
-				2F3F420219BEE8DB00487106 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F3F421E19BEEFE800487106 /* Build configuration list for PBXNativeTarget "XebiaBlogRSSWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F3F421C19BEEFE800487106 /* Debug */,
-				2F3F421D19BEEFE800487106 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 2F3F41D919BEE8DA00487106 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>15B70B736DA548FE888FC8E0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-XebiaBlogRSSWidget-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>21CF5A9BC0A74C99B3C662CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CDA575CBA856483DBDCCCB87</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2BF6E3E8FDA14E239935CEB1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F41D819BEE8DA00487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F41E319BEE8DA00487106</string>
+				<string>2F3F41F619BEE8DB00487106</string>
+				<string>2F3F421019BEEFE700487106</string>
+				<string>2F3F41E219BEE8DA00487106</string>
+				<string>647AAE21B59A4C7DB91049D6</string>
+				<string>8955E178FC0D4CA4A14B3BBA</string>
+				<string>772BA80E9C1F42C590075326</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41D919BEE8DA00487106</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0600</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Lammert Westerhoff</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>2F3F41E019BEE8DA00487106</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0</string>
+					</dict>
+					<key>2F3F41F219BEE8DB00487106</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0</string>
+						<key>TestTargetID</key>
+						<string>2F3F41E019BEE8DA00487106</string>
+					</dict>
+					<key>2F3F420C19BEEFE700487106</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2F3F41DC19BEE8DA00487106</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>2F3F41D819BEE8DA00487106</string>
+			<key>productRefGroup</key>
+			<string>2F3F41E219BEE8DA00487106</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>2F3F41E019BEE8DA00487106</string>
+				<string>2F3F41F219BEE8DB00487106</string>
+				<string>2F3F420C19BEEFE700487106</string>
+			</array>
+		</dict>
+		<key>2F3F41DC19BEE8DA00487106</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2F3F41FB19BEE8DB00487106</string>
+				<string>2F3F41FC19BEE8DB00487106</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2F3F41DD19BEE8DA00487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2F3F420819BEED1400487106</string>
+				<string>2F3F420619BEECAB00487106</string>
+				<string>2F3F41E919BEE8DB00487106</string>
+				<string>2F3F41E719BEE8DA00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F41DE19BEE8DA00487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>707C101811454183A826E150</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F41DF19BEE8DA00487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2F3F41EC19BEE8DB00487106</string>
+				<string>2F3F41EE19BEE8DB00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F41E019BEE8DA00487106</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>2F3F41FD19BEE8DB00487106</string>
+			<key>buildPhases</key>
+			<array>
+				<string>78A390E21A55483080F04844</string>
+				<string>2F3F41DD19BEE8DA00487106</string>
+				<string>2F3F41DE19BEE8DA00487106</string>
+				<string>2F3F41DF19BEE8DA00487106</string>
+				<string>F8A7F154D28A4422967A58E2</string>
+				<string>2F3F421F19BEEFE800487106</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2F3F421819BEEFE800487106</string>
+				<string>2F3F421B19BEEFE800487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>XebiaBlog</string>
+			<key>productName</key>
+			<string>XebiaBlog</string>
+			<key>productReference</key>
+			<string>2F3F41E119BEE8DA00487106</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>2F3F41E119BEE8DA00487106</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>XebiaBlog.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2F3F41E219BEE8DA00487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F41E119BEE8DA00487106</string>
+				<string>2F3F41F319BEE8DB00487106</string>
+				<string>2F3F420D19BEEFE700487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41E319BEE8DA00487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F41E619BEE8DA00487106</string>
+				<string>2F3F41E819BEE8DB00487106</string>
+				<string>2F3F41EA19BEE8DB00487106</string>
+				<string>2F3F41ED19BEE8DB00487106</string>
+				<string>2F3F41E419BEE8DA00487106</string>
+				<string>2F3F420519BEECAB00487106</string>
+				<string>2F3F420719BEED1400487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>XebiaBlog</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41E419BEE8DA00487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F41E519BEE8DA00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41E519BEE8DA00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41E619BEE8DA00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41E719BEE8DA00487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F41E619BEE8DA00487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F41E819BEE8DB00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41E919BEE8DB00487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F41E819BEE8DB00487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F41EA19BEE8DB00487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F41EB19BEE8DB00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41EB19BEE8DB00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41EC19BEE8DB00487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F41EA19BEE8DB00487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F41ED19BEE8DB00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41EE19BEE8DB00487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F41ED19BEE8DB00487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F41EF19BEE8DB00487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2F3F41FA19BEE8DB00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F41F019BEE8DB00487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F41F119BEE8DB00487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F41F219BEE8DB00487106</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>2F3F420019BEE8DB00487106</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2F3F41EF19BEE8DB00487106</string>
+				<string>2F3F41F019BEE8DB00487106</string>
+				<string>2F3F41F119BEE8DB00487106</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2F3F41F519BEE8DB00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>XebiaBlogTests</string>
+			<key>productName</key>
+			<string>XebiaBlogTests</string>
+			<key>productReference</key>
+			<string>2F3F41F319BEE8DB00487106</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>2F3F41F319BEE8DB00487106</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>XebiaBlogTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2F3F41F419BEE8DB00487106</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>2F3F41D919BEE8DA00487106</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2F3F41E019BEE8DA00487106</string>
+			<key>remoteInfo</key>
+			<string>XebiaBlog</string>
+		</dict>
+		<key>2F3F41F519BEE8DB00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>2F3F41E019BEE8DA00487106</string>
+			<key>targetProxy</key>
+			<string>2F3F41F419BEE8DB00487106</string>
+		</dict>
+		<key>2F3F41F619BEE8DB00487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F41F919BEE8DB00487106</string>
+				<string>2F3F41F719BEE8DB00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>XebiaBlogTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41F719BEE8DB00487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F41F819BEE8DB00487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41F819BEE8DB00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41F919BEE8DB00487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>XebiaBlogTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F41FA19BEE8DB00487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F41F919BEE8DB00487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F41FB19BEE8DB00487106</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2F3F41FC19BEE8DB00487106</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2F3F41FD19BEE8DB00487106</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2F3F41FE19BEE8DB00487106</string>
+				<string>2F3F41FF19BEE8DB00487106</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2F3F41FE19BEE8DB00487106</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>772BA80E9C1F42C590075326</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>INFOPLIST_FILE</key>
+				<string>XebiaBlog/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2F3F41FF19BEE8DB00487106</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>772BA80E9C1F42C590075326</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>INFOPLIST_FILE</key>
+				<string>XebiaBlog/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2F3F420019BEE8DB00487106</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2F3F420119BEE8DB00487106</string>
+				<string>2F3F420219BEE8DB00487106</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2F3F420119BEE8DB00487106</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>XebiaBlogTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/XebiaBlog.app/XebiaBlog</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2F3F420219BEE8DB00487106</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>XebiaBlogTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/XebiaBlog.app/XebiaBlog</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2F3F420519BEECAB00487106</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ArrowView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F420619BEECAB00487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F420519BEECAB00487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F420719BEED1400487106</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>XebiaBlogStyleKit.swift</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2F3F420819BEED1400487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F420719BEED1400487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F420919BEEFE700487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2F3F421419BEEFE700487106</string>
+				<string>2F3F422219BF025100487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F420A19BEEFE700487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2F3F420F19BEEFE700487106</string>
+				<string>21CF5A9BC0A74C99B3C662CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F420B19BEEFE700487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2F3F421619BEEFE800487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F420C19BEEFE700487106</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>2F3F421E19BEEFE800487106</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2BF6E3E8FDA14E239935CEB1</string>
+				<string>2F3F420919BEEFE700487106</string>
+				<string>2F3F420A19BEEFE700487106</string>
+				<string>2F3F420B19BEEFE700487106</string>
+				<string>15B70B736DA548FE888FC8E0</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>XebiaBlogRSSWidget</string>
+			<key>productName</key>
+			<string>XebiaBlogRSSWidget</string>
+			<key>productReference</key>
+			<string>2F3F420D19BEEFE700487106</string>
+			<key>productType</key>
+			<string>com.apple.product-type.app-extension</string>
+		</dict>
+		<key>2F3F420D19BEEFE700487106</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.app-extension</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>XebiaBlogRSSWidget.appex</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2F3F420E19BEEFE700487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>NotificationCenter.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/NotificationCenter.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>2F3F420F19BEEFE700487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F420E19BEEFE700487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F421019BEEFE700487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F421319BEEFE700487106</string>
+				<string>2F3F421519BEEFE800487106</string>
+				<string>2F3F422019BEF13A00487106</string>
+				<string>2F3F421119BEEFE700487106</string>
+				<string>2F3F422119BF025100487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>XebiaBlogRSSWidget</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F421119BEEFE700487106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F3F421219BEEFE700487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F421219BEEFE700487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F421319BEEFE700487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TodayViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F421419BEEFE700487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F421319BEEFE700487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F421519BEEFE800487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>MainInterface.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F421619BEEFE800487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F421519BEEFE800487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F3F421719BEEFE800487106</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>2F3F41D919BEE8DA00487106</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2F3F420C19BEEFE700487106</string>
+			<key>remoteInfo</key>
+			<string>XebiaBlogRSSWidget</string>
+		</dict>
+		<key>2F3F421819BEEFE800487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>2F3F420C19BEEFE700487106</string>
+			<key>targetProxy</key>
+			<string>2F3F421719BEEFE800487106</string>
+		</dict>
+		<key>2F3F421919BEEFE800487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F420D19BEEFE700487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2F3F421A19BEEFE800487106</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>2F3F41D919BEE8DA00487106</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2F3F420C19BEEFE700487106</string>
+			<key>remoteInfo</key>
+			<string>XebiaBlogRSSWidget</string>
+		</dict>
+		<key>2F3F421B19BEEFE800487106</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>2F3F420C19BEEFE700487106</string>
+			<key>targetProxy</key>
+			<string>2F3F421A19BEEFE800487106</string>
+		</dict>
+		<key>2F3F421C19BEEFE800487106</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8955E178FC0D4CA4A14B3BBA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>XebiaBlogRSSWidget/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>XebiaBlogRSSWidget/XebiaBlogRSSWidget-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2F3F421D19BEEFE800487106</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8955E178FC0D4CA4A14B3BBA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>XebiaBlogRSSWidget/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>XebiaBlogRSSWidget/XebiaBlogRSSWidget-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2F3F421E19BEEFE800487106</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2F3F421C19BEEFE800487106</string>
+				<string>2F3F421D19BEEFE800487106</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2F3F421F19BEEFE800487106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string></string>
+			<key>dstSubfolderSpec</key>
+			<string>13</string>
+			<key>files</key>
+			<array>
+				<string>2F3F421919BEEFE800487106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>name</key>
+			<string>Embed App Extensions</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F3F422019BEF13A00487106</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XebiaBlogRSSWidget-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F422119BF025100487106</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RSSItemTableViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F3F422219BF025100487106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F3F422119BF025100487106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6129B286344D48E183F2DF29</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-XebiaBlog.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>647AAE21B59A4C7DB91049D6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6129B286344D48E183F2DF29</string>
+				<string>2F3F420E19BEEFE700487106</string>
+				<string>CDA575CBA856483DBDCCCB87</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>707C101811454183A826E150</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6129B286344D48E183F2DF29</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>772BA80E9C1F42C590075326</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-XebiaBlog.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-XebiaBlog.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>78A390E21A55483080F04844</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>8955E178FC0D4CA4A14B3BBA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-XebiaBlogRSSWidget.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-XebiaBlogRSSWidget.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CDA575CBA856483DBDCCCB87</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-XebiaBlogRSSWidget.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F8A7F154D28A4422967A58E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-XebiaBlog-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>2F3F41D919BEE8DA00487106</string>
+</dict>
+</plist>
