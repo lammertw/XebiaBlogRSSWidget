@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class ArrowView: UIView {
 
     override func drawRect(rect: CGRect)

@@ -3,6 +3,7 @@ platform :ios, "8.0"
 
 target "XebiaBlog" do
 
+  pod 'TMCache', '~> 1.2'
 end
 
 target "XebiaBlogRSSWidget" do
